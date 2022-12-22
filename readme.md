@@ -40,7 +40,7 @@ $ # Create an 'fix' commit
 $ git commit -m "fix: this is an fix commit" --allow-empty
 
 $ # Bump and sync to new version on '.semver' and 'pom.xml' files
-$ git mkver patch && ./mvnw versions:set -DnewVersion="$(cat .semver)" && ./mvnw versions:commit
+$ git mkver patch && ./mvnw versions:set -DnewVersion="$(cat .semver)" versions:commit
 
 $ # Commit Bumped files
 $ git add .semver pom.xml && git commit -m "build: bumping to $(cat .semver)"
