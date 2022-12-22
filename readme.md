@@ -17,14 +17,13 @@ This is an sample project that demonstrates how to use the conventional commits 
 ### 3. Clone or initialize local git repository.
 
 ```console
-$ git clone git@github.com:alansferreira/git-mkver-4any.git 
-$ cd git-mkver-4any/mkver-with-maven
+$ git clone git@github.com:alansferreira/git-mkver-with-maven.git 
+$ cd git-mkver-with-maven
 ```
-
 Or
 
 ```console
-$ mkdir mkver-with-maven
+$ mkdir git-mkver-with-maven
 $ git init
 ```
 ### 
