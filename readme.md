@@ -28,7 +28,7 @@ $ git init
 ```
 ### 
 
-### 2. Initialize the `.semver` file.
+### 2. Initialize the `.semver` file .
 
 ```console
 $ echo "0.0.0" > .semver
