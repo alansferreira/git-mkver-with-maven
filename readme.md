@@ -12,8 +12,8 @@ This is an sample project that demonstrates how to use the conventional commits 
 
 ## Get Started
 
-### 1. Install Git CLI and Git-MkVer CLI.
-### 2. Install Maven CLI or use an embedded Maven Wrapper CLI
+### 1. Install [Git CLI](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Git-MkVer CLI](https://idc101.github.io/git-mkver/installation).
+### 2. Install [Maven CLI](https://www.baeldung.com/install-maven-on-windows-linux-mac) or use an embedded [Maven Wrapper CLI](https://www.baeldung.com/maven-wrapper)
 ### 3. Clone or initialize local git repository.
 
 ```bash
