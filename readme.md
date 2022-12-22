@@ -16,40 +16,41 @@ This is an sample project that demonstrates how to use the conventional commits 
 ### 2. Install Maven CLI or use an embedded Maven Wrapper CLI
 ### 3. Clone or initialize local git repository.
 
-```console
-$ git clone git@github.com:alansferreira/git-mkver-with-maven.git 
-$ cd git-mkver-with-maven
+```bash
+git clone git@github.com:alansferreira/git-mkver-with-maven.git 
+cd git-mkver-with-maven
 ```
 Or
 
-```console
-$ mkdir git-mkver-with-maven
-$ git init
+```bash
+mkdir git-mkver-with-maven
+git init
 ```
 ### 
 
 ### 2. Initialize the `.semver` file .
 
-```console
-$ echo "0.0.0" > .semver
+```bash
+echo "0.0.0" > .semver
 ```
 ### 3. Well done, now you can just make yours commits following the **conventional commits** on your messages and use this commands bellow:
 
-```console
-$ # Create an 'fix' commit
-$ git commit -m "fix: this is an fix commit" --allow-empty
+```bash
+# Create an 'fix' commit
+git commit -m "fix: this is an fix commit" --allow-empty
 
-$ # Bump and sync to new version on '.semver' and 'pom.xml' files
-$ git mkver patch && ./mvnw versions:set -DnewVersion="$(cat .semver)" versions:commit
+# Bumping new version
+git mkver patch 
+# Use Maven CLI to sync 'pom.xml' version with new '.semver' value
+./mvnw versions:set -DnewVersion="$(cat .semver)" versions:commit
 
-$ # Commit Bumped files
-$ git add .semver pom.xml && git commit -m "build: bumping to $(cat .semver)"
+# Commit Bumped files
+git add .semver pom.xml
+git commit -m "build: bumping to $(cat .semver)"
+git mkver tag
 
-$ # Freezing the version tag on git
-$ git mkver tag
-
-$ # Push your(s) tag(s) to remote
-$ git push --follow-tags
+# Push your(s) tag(s) to remote
+git push --follow-tags
 ```
 
 
