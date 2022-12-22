@@ -4,7 +4,7 @@
 
   <groupId>org.alansferreira.git</groupId>
   <artifactId>mkver-with-maven</artifactId>
-  <version>3.0.0</version>
+  <version>3.1.0</version>
   <name>mkver-with-maven</name>
   <description>Demo project to demonstates an Maven project with conventional commits</description>
   
