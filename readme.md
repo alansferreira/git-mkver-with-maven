@@ -46,7 +46,7 @@ git mkver patch
 
 # Commit Bumped files
 git add .semver pom.xml
-git commit -m "build: bumping to $(cat .semver)"
+git commit -m "build: [skip-ci] bumping to $(cat .semver)"
 git mkver tag
 
 # Push your(s) tag(s) to remote
